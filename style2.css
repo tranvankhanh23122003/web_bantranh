@@ -1,0 +1,50 @@
+.danhsach {
+    text-align: center;
+ 
+    display: flex;
+
+}
+
+.danhsach ul {
+    list-style-type: none;
+    /* loại bỏ dấu chấm liệt kê */
+    padding: 0;
+}
+
+.danhsach li {
+    display: inline-block;
+    /* hiển thị các phần tử li trên cùng một dòng */
+}
+
+.danhsach img {
+    width: 500px;
+    display: block;
+    margin: 0 auto;
+  
+   
+}
+
+
+.chinhsua {
+
+    text-align: center;
+}
+
+.chinhsua img {
+    display: block;
+    margin: 0 auto 10px;
+    width: 800px;
+
+
+}
+.hinhanh{
+  
+display: table;
+    height: 600px;
+   margin: 0 auto;
+   text-align: center;
+}
+.hinhanh img {
+    width: 30%;
+
+}

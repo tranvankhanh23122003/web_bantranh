@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kiệt Tác Tranh Nghệ Thuật</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    h1 {
+      color: red;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    #hoa {
+      color: blueviolet;
+      text-decoration: double;
+    }
+
+    #be {
+      color: blue;
+      text-transform: none;
+    }
+
+    #name {
+      color: blue;
+      text-align: center;
+    }
+
+    #list-products {
+      display: flex;
+      list-style: none;
+
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    #wp-products {
+      text-align: center;
+    }
+
+    .col-6 {
+      flex: 1;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: 10px;
+      align-items: center;
+    }
+
+    .text-center {
+      text-align: center;
+      margin: 0 auto;
+      /* Thêm margin:auto để căn giữa theo chiều ngang */
+    }
+
+    .text-center img {
+      height: 300px;
+      margin: 0 auto;
+      /* Thêm margin:auto để căn giữa theo chiều ngang */
+    }
+
+    .name,
+    .decs,
+    .price {
+      text-align: center;
+    }
+
+    #anh-1 {
+      color: aqua;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    body {
+      background-color: white;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<div class="hero">
+  <div class="containerr">
+    <div class="clock">
+      <span id="hrs">00</span>
+      <span>:</span>
+      <span id="min">00</span>
+      <span>:</span>
+      <span id="sec">00</span>
+    </div>
+  </div>
+</div>
+<script>
+  let hrs = document.getElementById("hrs");
+  let min = document.getElementById("min");
+  let sec = document.getElementById("sec");
+  setInterval(() => {
+    let currentTime = new Date;
+    hrs.innerHTML = (currentTime.getHours()<10?" 0":" ") +currentTime.getHours();
+    min.innerHTML = (currentTime.getMinutes()<10?" 0":" ") +currentTime.getMinutes();
+    sec.innerHTML = (currentTime.getSeconds()<10?" 0":" ") +currentTime.getSeconds();
+  }, 1000);
+</script>
+<body >
+  <div style="background-color: aqua" class="row display-flex">
+    <div class="col-7 mt-2">
+      <img style="height: 50px; padding: 10px;" src="image/15-153597_vietnam-flag-circle-png-transparent-png.png" alt="" />
+    </div>
+    <div class="col text-align mt-3">
+      <input type="text" placeholder="Tìm kiếm" />
+    </div>
+    <div class="col text-align mt-3">
+      <button class="button primary">Tìm</button>
+    </div>
+  </div>
+  <div class="box">
+    
+    <ul>
+      <a href="thunghiem.html"> Trang Chủ</a>
+      <li><a href="#">Tranh Nghệ Thuật &#x25BE;</a>
+        <ul class="dropdown">
+          <li><a href="#"><b><i>CHẤT LIỆU</i></b></a></li>
+          <li><a href="trangnghethuat.html">Tranh sơn mài</a></li>
+          <li><a href="trangnghethuat2.html">Tranh sơn dầu</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Nghệ Sĩ &#x25BE;</a>
+        <ul class="dropdown">
+          <li><a href="#">Trần Văn Khánh</a></li>
+          <li><a href="#">NS văn báu</a></li>
+          <li><a href="#">Wibu chúa</a></li>
+        </ul>
+      </li>
+      <li><a href="tuongsonmai.html"> Tượng Sơn Mài </a>
+      </li>
+      <li><a href="#">Gốm Nghệ Thuật </a>
+
+      </li>
+      <li><a href="#">Nội Thất Decor &#x25BE;</a>
+        <ul class="dropdown">
+          <li><a href="#">Bình Hoa Nghệ Thuật</a></li>
+          <li><a href="#">Bàn Nghệ Thuật </a></li>
+          <li><a href="#">Chân Nến Trang Trí</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Vẽ Tranh Theo Yêu Cầu &#x25BE;</a>
+        <ul class="dropdown">
+          <li><a href="#">Phong cách HS Trần Văn Khánh </a></li>
+          <li><a href="#">Phong cách HS Wibu</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="slide">
+    <img style="width: 100%; height: 700px;" src="image/wibu.jpg" alt="">
+    
+  </div>
+  <script src="app.js"></script>
+
+  </div>
+  </div>
+  <div id="whatsapp">
+    <img src="" alt="">
+    <a href="chat.html" target="_blank" id="toggle1" class="wtsapp" >   
+    
+      <i  class="fa-solid fa-phone-volume"></i>
+      
+    </a>
+
+  </div>
+  <div class="col-12">
+    
+    <marquee behavior="" direction="left">
+      
+      <h1><b>Tranh Nghệ Thuật – Phòng Trưng Bày Tác Phẩm Hội Họa Nguyên Bản & Độc Nhất</b></h1>
+    </marquee>
+    <h2>“Kiệt tác nghệ thuật là một tác phẩm sáng tạo mà được khen ngợi và tôn vinh đáng kể, đặc biệt được coi là
+      tác phẩm vĩ đại nhất trong sự nghiệp của một người hoặc cho một tác phẩm có tính sáng tạo, kỹ năng, sự thành
+      thạo hay tay nghề xuất sắc…”. Nguyên Art Gallery hiểu sâu sắc rằng mỗi tác phẩm tranh nghệ thuật đều là Kiệt
+      tác nghệ thuật của chính các nghệ sỹ. Họ trân trọng, nâng niu và mong muốn tác phẩm của mình được đến với chủ
+      sở hữu, nhà sưu tầm thực sự yêu thích và cảm nhận được những thông điệp mà người nghệ sỹ gửi gắm.
+    </h2>
+    <h2>
+      Tọa lạc tại con phố nổi tiếng Hà Nội, phố Văn Miếu, cách Bảo tàng Mỹ Thuật 200 mét, ngôi nhà 31A là nơi hội tụ
+      tinh hoa của nghệ thuật đương đại Việt Nam. Nơi giao thoa ngôn ngữ phi âm thanh giữa Việt Nam và Quốc tế, nơi
+      hội tụ của những Kiệt tác nghệ thuật. Mang trên mình sứ mệnh là cầu nối giữa nghệ sỹ, nhà sưu tầm và công
+      chúng yêu nghệ thuật trong và ngoài nước, Nguyên Art Gallery đã tạo ra một “sân chơi” Kiệt tác nghệ thuật để
+      tôn vinh các tác phẩm và đưa những “đứa con tinh thần” của các nghệ sỹ đến với những chủ nhân mới của mình.
+    </h2>
+    <h2>Chữ Nguyên trong Nguyên Art được hiểu như là Nguyên gốc, Nguyên bản. Điều này thể hiện tất cả các tác phẩm
+      được trưng bày trong Nguyên Art Gallery là những sáng tác của người nghệ sỹ. Không có bức tranh thứ hai cùng
+      chủ đề. Và chúng tôi nói Không với tranh chép.</h2>
+    <hr>
+  </div>
+  <div class="container">
+
+    <div class="row">
+      <div id="wp-products">
+        <h2 id="name">
+          <div class="row">
+            <div class="col-4 text-bottom ">
+              <hr>
+            </div>
+            <div class="col-4">
+              TRANH NGHỆ THUẬT CỦA CÁC HỌA SĨ NỔI TIẾNG
+            </div>
+            <div class="col-4 text-head">         
+              <hr>
+            </div>
+          </div>
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <ul>
+            <div class="text-center">
+              <img style="height: 300px;" src="image/decor1.jpg" alt="không thể hiển thị" class="mx-6">
+              <p>
+              <h2>Tranh Decor</h2>
+              </p>
+              <p> Chất Liệu : In</p>
+              <p> Chủ Đề : Trang Trí</p>
+              <a href="chitiet.html">
+                <button>
+                  <p>Tham Khảo </p>
+                </button>
+              </a>
+            </div>
+          </ul>
+        </div>
+        <div class="col-4">
+          <ul>
+            <div class="text-center">
+              <img style="height: 300px;" src="image/2.jpg" alt="không thể hiển thị" class="mx-6">
+              <p>
+              <h2>Ảnh Tự Thiết Kế Theo Yêu Cầu</h2>
+              <p>Chất Liệu : In</p>
+              </p>
+              <p>Chủ Đề : Linh Vật</p>
+              <a href="chitiet2.html">
+                <button>
+                  <p>Tham Khảo </p>
+                </button>
+              </a>
+            </div>
+          </ul>
+        </div>
+        <div class="col-4">
+          <ul>
+            <div class="text-center">
+              <img style="height: 300px;" src="image/3.jpg" alt="không thể hiển thị">
+              <p>
+              <h2>Rồng Màu Nước </h2>
+                </p>
+                <p> Chất Liệu : Màu nước trên lụa</p>
+                <p> Chủ Đề : Trang Trí </p>
+                <button>
+                  <p>Tham Khảo</p>
+                </button>
+            </div>
+          </ul>
+        </div>
+      </div>
+      <div id="wp-products">
+        <h2 id="name">
+          <div class="row">
+            <div class="col-4">
+              <hr>
+            </div>
+            <div class="col-4">
+              TRANH NGHỆ THUẬT CHỦ ĐỀ
+            </div>
+            <div class="col-4">
+              <hr>
+            </div>
+          </div>
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <ul>
+            <div class="text-center">
+              <img style="height: 600px;" src="image/tranhtruutuong.jpeg" alt="không thể hiển thị" class="mx-6">
+              <p>
+              <h2>Tranh Trừu Tượng</h2>
+              </p>
+              <p> Chất Liệu : In</p>
+              <p> Chủ Đề : Phong Cảnh</p>
+              <a href="chitiet.html">
+                <button>
+                  <p>Tham Khảo </p>
+                </button>
+              </a>
+            </div>
+          </ul>
+        </div>
+        <div class="col-6">
+          <ul>
+            <div class="text-center">
+              <img style="height: 300px;" src="image/tranhpho.jpg" alt="không thể hiển thị" class="mx-6">
+              <p>
+              <h2>Tranh Phố</h2>
+              </p>
+              <p> Chất Liệu : In</p>
+              <p> Chủ Đề : Phong Cảnh</p>
+              <a href="chitiet.html">
+                <button>
+                  <p>Tham Khảo </p>
+                </button>
+              </a>
+            </div>
+          </ul>
+        </div>
+
+        <div class="col-6">
+          <ul>
+            <div class="text-center">
+              <img style="height: 300px;" src="image/tranhphongcanh.jpg" alt="không thể hiển thị" class="mx-6">
+              <p>
+              <h2>Tranh Phong Cảnh</h2>
+              </p>
+              <p> Chất Liệu : In</p>
+              <p> Chủ Đề : Phong Cảnh</p>
+              <a href="chitiet.html">
+                <button>
+                  <p>Tham Khảo </p>
+                </button>
+              </a>
+            </div>
+          </ul>
+        </div>
+        <div class="col-6">
+          <ul>
+            <div class="text-center">
+              <img style="height: 300px;" src="image/decor1.jpg" alt="không thể hiển thị" class="mx-6">
+              <p>
+              <h2>Tranh Decor</h2>
+              </p>
+              <p> Chất Liệu : In</p>
+              <p> Chủ Đề : Phong Cảnh</p>
+              <a href="chitiet.html">
+                <button>
+                  <p>Tham Khảo </p>
+                </button>
+              </a>
+            </div>
+          </ul>
+        </div>
+        <div class="col-6">
+          <ul>
+            <div class="text-center">
+              <img style="height: 300px;" src="image/decor1.jpg" alt="không thể hiển thị" class="mx-6">
+              <p>
+              <h2>Tranh Decor</h2>
+              </p>
+              <p> Chất Liệu : In</p>
+              <p> Chủ Đề : Phong Cảnh</p>
+              <a href="chitiet.html">
+                <button>
+                  <p>Tham Khảo </p>
+                </button>
+              </a>
+            </div>
+          </ul>
+        </div>
+        <div class="col-4">
+          <ul>
+            <div class="text-center">
+              <img style="height: 300px;" src="image/decor1.jpg" alt="không thể hiển thị" class="mx-6">
+              <p>
+              <h2>Tranh Decor</h2>
+              </p>
+              <p> Chất Liệu : In</p>
+              <p> Chủ Đề : Phong Cảnh</p>
+              <a href="chitiet.html">
+                <button>
+                  <p>Tham Khảo </p>
+                </button>
+              </a>
+            </div>
+          </ul>
+        </div>
+        <div class="col-4">
+          <ul>
+            <div class="text-center">
+              <img style="height: 300px;" src="image/decor1.jpg" alt="không thể hiển thị" class="mx-6">
+              <p>
+              <h2>Tranh Decor</h2>
+              </p>
+              <p> Chất Liệu : In</p>
+              <p> Chủ Đề : Phong Cảnh</p>
+              <a href="chitiet.html">
+                <button>
+                  <p>Tham Khảo </p>
+                </button>
+              </a>
+            </div>
+          </ul>
+        </div>
+        <div class="col-4">
+          <ul>
+            <div class="text-center">
+              <img style="height: 300px;" src="image/decor1.jpg" alt="không thể hiển thị" class="mx-6">
+              <p>
+              <h2>Tranh Decor</h2>
+              </p>
+              <p> Chất Liệu : In</p>
+              <p> Chủ Đề : Phong Cảnh</p>
+              <a href="chitiet.html">
+                <button>
+                  <p>Tham Khảo </p>
+                </button>
+              </a>
+            </div>
+          </ul>
+        </div>
+        <div class="col-4">
+          <ul>
+            <div class="text-center">
+
+              <img style="height: 300px;" src="image/2.jpg" alt="không thể hiển thị" class="mx-6">
+              <p>
+              <h2>Ảnh Tự Thiết Kế Theo Yêu Cầu</h2>
+              <p>Chất Liệu : In</p>
+              </p>
+              <p>Chủ Đề : Linh Vật</p>
+              <a href="chitiet2.html">
+                <button>
+                  <p>Tham Khảo </p>
+                </button>
+              </a>
+            </div>
+          </ul>
+        </div>
+        
+        <div id="wp-products">
+          <h2 id="name">
+            <div class="row">
+              <div class="col-4">
+                <hr>
+              </div>
+              <div class="col-4">
+                TRANH NGHỆ THUẬT CHẤT LIỆU
+              </div>
+              <div class="col-4">
+                <hr>
+              </div>
+            </div>
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
